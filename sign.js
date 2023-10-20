@@ -25,3 +25,11 @@ mail.addEventListener('change', () => {
         mail.style.backgroundColor = 'rgb(221, 146, 146)';
     }
 })
+
+tel.addEventListener('change', () => {
+    if (telRegex.test(tel.value)) {
+        mail.style.backgroundColor = 'rgb(205, 223, 178)';
+    } else {
+        mail.style.backgroundColor = 'rgb(221, 146, 146)';
+    }
+})
