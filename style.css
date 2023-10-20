@@ -1,0 +1,142 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    width: 60%;
+}
+
+header {
+    width: 40%;
+    background-image: url(imgs/bg.png);
+}
+
+header div {
+    display: flex;
+    background-color: rgba(122, 108, 90, 0.5);
+    justify-content: space-around;
+    padding: 5%;
+    margin-top: 30%;
+}
+
+header img {
+    width: auto;
+    height: 120px;
+}
+
+header span {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 50px;
+}
+
+span + img {
+    width: auto;
+    height: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(94, 85, 76);
+    padding: 5%;
+}
+
+.main-sec {
+    background: linear-gradient(to top right, rgb(168, 154, 146), rgb(104, 95, 83));
+    border: 1px solid rgb(99, 85, 73);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(61, 53, 40);
+    padding: 20px;
+}
+
+.head-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    gap: 10px;
+}
+
+main div span {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.sub-secs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+}
+
+input:hover, input:focus {
+    background-color: rgb(224, 215, 211);
+}
+
+/* input:valid {
+    background-color: rgb(205, 223, 178);
+}
+
+input:invalid {
+    background-color: rgb(221, 146, 146);
+} */
+
+.foot-sec {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.foot-sec + span, a {
+    font-size: 1.5rem;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 3px solid rgb(77, 63, 46);
+    padding: 20px;
+}
+
+legend {
+    font-size: 1.7rem;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+button {
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(61, 55, 45);
+}
