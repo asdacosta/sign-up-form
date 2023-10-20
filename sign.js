@@ -1,7 +1,7 @@
 const names = document.querySelectorAll('input[type="text"]');
 const mail = document.querySelector('input[type="email"]');
 const tel = document.querySelector('input[type="tel"]');
-const pwds = document.querySelector('input[type="password"]');
+const pwds = document.querySelectorAll('input[type="password"]');
 
 const nameRegex = /^[A-Za-z]{2,20}$/;
 const mailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -28,8 +28,18 @@ mail.addEventListener('change', () => {
 
 tel.addEventListener('change', () => {
     if (telRegex.test(tel.value)) {
-        mail.style.backgroundColor = 'rgb(205, 223, 178)';
+        tel.style.backgroundColor = 'rgb(205, 223, 178)';
     } else {
-        mail.style.backgroundColor = 'rgb(221, 146, 146)';
+        tel.style.backgroundColor = 'rgb(221, 146, 146)';
     }
+})
+
+pwds.forEach(pwd => {
+    pwd.addEventListener('change', () => {
+        if (pwdRegex.test(pwd.value)) {
+        pwd.style.backgroundColor = 'rgb(205, 223, 178)';
+        } else {
+        pwd.style.backgroundColor = 'rgb(221, 146, 146)';
+        }
+    })
 })
