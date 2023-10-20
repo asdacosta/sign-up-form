@@ -17,3 +17,11 @@ names.forEach(name => {
         }
     })
 })
+
+mail.addEventListener('change', () => {
+    if (mailRegex.test(mail.value)) {
+        mail.style.backgroundColor = 'rgb(205, 223, 178)';
+    } else {
+        mail.style.backgroundColor = 'rgb(221, 146, 146)';
+    }
+})
