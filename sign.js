@@ -7,7 +7,7 @@ const secPwd = document.querySelector('.s-pwd');
 
 const nameRegex = /^[A-Za-z -]{2,20}$/;
 const mailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-const telRegex = /^(\+\d{1,2}\s?)?(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$/;
+const telRegex = /^(\+\d{1,4}\s?)?(\(?\d{1,4}\)?[\s.-]?)?\d{1,5}[\s.-]?\d{1,5}[\s.-]?\d{1,5}$/;
 const pwdRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
 function validateInput (input, regex) {
