@@ -25,6 +25,7 @@ function validateInput (input, regex) {
                 span.textContent = 'Password did not match.';
             }
             span.style.animation = 'fadeIn 0.5s ease';
+            span.style.left = '70%';
         }
     })
 }
@@ -34,6 +35,7 @@ const span = document.querySelector('.sub-secs span');
 firstPwd.addEventListener('input', () => {
     span.innerHTML = 'At least one uppercase.<br>At least one lowercase.<br>At least one digit.<br>At least one special character.<br>Min length of 8 characters.';
     span.style.animation = 'fadeIn 2s ease';
+    span.style.left = '5%';
 })
 
 validateInput(firstName, nameRegex);
