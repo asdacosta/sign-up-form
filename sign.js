@@ -18,15 +18,6 @@ function validateInput (input, regex) {
         } else {
             input.style.backgroundColor = 'rgb(221, 146, 146)';
         }
-        if (input === secPwd) {
-            if (firstPwd.value === secPwd) {
-                span.textContent = 'Password matched!';
-            } else {
-                span.textContent = 'Password did not match.';
-            }
-            span.style.animation = 'fadeIn 0.5s ease';
-            span.style.left = '70%';
-        }
     })
 }
 
@@ -38,12 +29,23 @@ firstPwd.addEventListener('input', () => {
     span.style.left = '5%';
 })
 
+secPwd.addEventListener('change', () => {
+    if (pwdRegex.test(secPwd.value) && firstPwd.value === secPwd.value) {
+        span.textContent = 'Password matched!';
+        secPwd.style.backgroundColor = 'rgb(205, 223, 178)';
+    } else {
+        span.textContent = 'Password did not match.';
+        secPwd.style.backgroundColor = 'rgb(221, 146, 146)';
+    }
+    span.style.animation = 'fadeIn 0.5s ease';
+    span.style.left = '70%';
+})
+
 validateInput(firstName, nameRegex);
 validateInput(secName, nameRegex);
 validateInput(mail, mailRegex);
 validateInput(tel, telRegex);
 validateInput(firstPwd, pwdRegex);
-validateInput(secPwd, pwdRegex);
 
 
 
