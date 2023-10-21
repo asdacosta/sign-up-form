@@ -25,6 +25,7 @@ const span = document.querySelector('.sub-secs span');
 
 firstPwd.addEventListener('input', () => {
     span.innerHTML = 'At least one uppercase.<br>At least one lowercase.<br>At least one digit.<br>At least one special character.<br>Min length of 8 characters.';
+    span.style.animation = 'fadeIn 2s ease';
 })
 
 validateInput(firstName, nameRegex);
@@ -37,11 +38,13 @@ validateInput(secPwd, pwdRegex);
 
 
 
+
 // const names = document.querySelectorAll('input[type="text"]');
 // const mail = document.querySelector('input[type="email"]');
 // const tel = document.querySelector('input[type="tel"]');
 // const pwds = document.querySelectorAll('input[type="password"]');
 // const inputs = document.querySelectorAll('input');
+
 
 // Second Method
 // inputs.forEach(input => {
