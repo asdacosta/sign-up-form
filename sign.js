@@ -5,7 +5,7 @@ const tel = document.querySelector('input[type="tel"]');
 const firstPwd = document.querySelector('.f-pwd');
 const secPwd = document.querySelector('.s-pwd');
 
-const nameRegex = /^[A-Za-z]{2,20}$/;
+const nameRegex = /^[A-Za-z -]{2,20}$/;
 const mailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 const telRegex = /^(\+\d{1,2}\s?)?(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$/;
 const pwdRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
@@ -17,6 +17,14 @@ function validateInput (input, regex) {
             input.style.backgroundColor = 'rgb(205, 223, 178)';
         } else {
             input.style.backgroundColor = 'rgb(221, 146, 146)';
+        }
+        if (input === secPwd) {
+            if (firstPwd.value === secPwd) {
+                span.textContent = 'Password matched!';
+            } else {
+                span.textContent = 'Password did not match.';
+            }
+            span.style.animation = 'fadeIn 0.5s ease';
         }
     })
 }
