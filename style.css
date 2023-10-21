@@ -122,7 +122,6 @@ input:hover, input:focus {
 .pass span {
     position: absolute;
     top: 100px;
-    left: 10px;
     background-color: white;
     opacity: 0.5;
     font-family: Arial, sans-serif;
@@ -150,8 +149,23 @@ label {
     margin: 10px 0;
 }
 
+strong {
+    color: rgb(230, 66, 66);
+}
+
 button {
     font-size: 1.2rem;
     color: white;
     background-color: rgb(61, 55, 45);
+    border-radius: 5px;
+}
+
+button:hover {
+    color: rgb(224, 215, 211);
+    cursor: pointer;
+    border: 1px solid rgb(77, 63, 46);
+}
+
+button:focus {
+    box-shadow: 1px 1px 3px 1px black;
 }
