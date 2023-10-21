@@ -12,6 +12,7 @@ const pwdRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&
 
 function validateInput (input, regex) {
     input.addEventListener('change', () => {
+        span.innerHTML = '';
         if (regex.test(input.value)) {
             input.style.backgroundColor = 'rgb(205, 223, 178)';
         } else {
@@ -19,6 +20,12 @@ function validateInput (input, regex) {
         }
     })
 }
+
+const span = document.querySelector('.sub-secs span');
+
+firstPwd.addEventListener('input', () => {
+    span.innerHTML = 'At least one uppercase.<br>At least one lowercase.<br>At least one digit.<br>At least one special character.<br>Min length of 8 characters.';
+})
 
 validateInput(firstName, nameRegex);
 validateInput(secName, nameRegex);
