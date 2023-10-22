@@ -113,6 +113,11 @@ input:hover, input:focus {
     font-size: 1.4rem;
 }
 
+a:hover {
+    text-decoration: none;
+    color: rgb(71, 71, 206);
+}
+
 .pass {
     position: relative;
 }
