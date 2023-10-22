@@ -17,3 +17,8 @@ Developers, users, and recruiters.
 * `VS Code` 
 
 ## Files
+| File | Description |
+| - | - |
+| `index.html` | Structure of web page.|
+| `sign.js` | Adds interactivity to form.|
+| `style.css` | Style form to be visually appealing.|
