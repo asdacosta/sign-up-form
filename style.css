@@ -15,37 +15,42 @@ body {
 }
 
 main {
-    width: 60%;
+    position: relative;
+    flex: 1 1 auto;
 }
 
 header {
-    width: 40%;
+    flex: 1 1 auto;
     background-image: url(imgs/bg.png);
+    background-size: cover;
+    background-position: center center;
 }
 
 header div {
     display: flex;
     background-color: rgba(122, 108, 90, 0.5);
-    justify-content: space-around;
+    justify-content: center;
     padding: 5%;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 header img {
     width: auto;
-    height: 120px;
+    height: 70px;
+    margin-right: 10px;
 }
 
 header span {
-    font-size: 2.8rem;
+    /* font-size: 2.5rem; */
+    font-size: 2.25vw;
     font-weight: 800;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 span + img {
-    width: auto;
-    height: 80px;
+    width: 2.7vw;
+    height: auto;
 }
 
 main {
@@ -62,6 +67,8 @@ main {
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px rgb(61, 53, 40);
     padding: 20px;
+    min-width: 400px;
+    overflow: auto;
 }
 
 .head-div {
@@ -72,7 +79,7 @@ main {
 }
 
 .head-div span {
-    font-size: 2.5rem;
+    font-size: 1.7vw;
     font-weight: 500;
     padding-top: 20px;
 }
@@ -85,10 +92,11 @@ main {
 form div {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 input {
-    width: 200px;
+    width: 270px;
     height: 25px;
 }
 
@@ -103,7 +111,7 @@ input:hover, input:focus {
 }
 
 .foot-sec + span, a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .pass {
@@ -169,3 +177,74 @@ button:hover {
 button:focus {
     box-shadow: 1px 1px 3px 1px black;
 }
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+.up-bean {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    opacity: 0.4;
+    top: 80px;
+    left: 30px;
+    animation: fade 3s ease;
+}
+
+.down-bean {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    opacity: 0.4;
+    bottom: 80px;
+    right: 30px;
+    animation: fade 3s ease;
+}
+
+@media (max-width: 1150px) {
+    body {
+        flex-direction: column;
+        overflow: auto;
+    }
+    header {
+        background-image: url(imgs/bg-turn.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    header div {
+        margin: 100px auto;
+    }
+    header span {
+        font-size: 2.5rem;
+    }
+    .head-div span {
+        font-size: 3vw;
+    }
+    span + img {
+        width: auto;
+        height: 6vw;
+    }
+    .up-bean, .down-bean {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 750px) {
+    input {
+        width: 280px;
+    }
+    .sub-secs {
+        flex-direction: column;
+    }
+    form div {
+        width: 100%;
+        align-items: center;
+    }
+}
+
