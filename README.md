@@ -22,3 +22,10 @@ Developers, users, and recruiters.
 | `index.html` | Structure of web page.|
 | `sign.js` | Adds interactivity to form.|
 | `style.css` | Style form to be visually appealing.|
+
+## Credit
+| File | Credence |
+| `imgs/bg.png` | By Nathan Dumlao from [Unsplash](https://unsplash.com/).|
+| `imgs/cup.svg` | By Yasminvisible from [Noun Project](https://thenounproject.com/icon/coffee-1206478/) .|
+| `imgs/mug.svg` | By Marlyani from [Noun Project](https://thenounproject.com/icon/coffee-3466441/).|
+| `imgs/coffee-beans.png` | [Flaticon](https://www.flaticon.com/free-icons/coffee-beans).|
