@@ -12,6 +12,7 @@ html, body {
 
 body {
     display: flex;
+    border: 2px solid teal;
 }
 
 main {
@@ -67,7 +68,7 @@ main {
     border-radius: 10px;
     box-shadow: 1px 1px 10px 1px rgb(61, 53, 40);
     padding: 20px;
-    min-width: 400px;
+    /* min-width: 400px; */
     overflow: auto;
 }
 
@@ -148,11 +149,11 @@ fieldset {
 }
 
 legend {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 label {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     margin: 10px 0;
 }
@@ -245,6 +246,16 @@ button:focus {
     form div {
         width: 100%;
         align-items: center;
+    }
+    header span {
+        font-size: 2rem;
+    }
+    .head-div span {
+        font-size: 1.5rem;
+    }
+    span + img {
+        width: auto;
+        height: 50px;
     }
 }
 
