@@ -25,6 +25,7 @@ Developers, users, and recruiters.
 
 ## Credit
 | File | Credence |
+| - | - |
 | `imgs/bg.png` | By Nathan Dumlao from [Unsplash](https://unsplash.com/).|
 | `imgs/cup.svg` | By Yasminvisible from [Noun Project](https://thenounproject.com/icon/coffee-1206478/) .|
 | `imgs/mug.svg` | By Marlyani from [Noun Project](https://thenounproject.com/icon/coffee-3466441/).|
