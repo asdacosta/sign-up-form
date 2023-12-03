@@ -16,7 +16,7 @@
 
 **Demo:**
 
-![Live Demo](./view-imgs/)
+![Live Demo](./view-imgs/signup-demo.gif)
 
 <details>
 
@@ -24,12 +24,12 @@
 
 **Desktop View:**
 
-<img src="./view-imgs/" alt="desktop view">
+<img src="./view-imgs/desktop.png" alt="desktop view">
 <br>
 
 **Mobile View:**
 
-It's a desktop application
+<img src="./view-imgs/mobile.png" alt="mobile view" width="45%" height="45%">
 
 </details>
 
