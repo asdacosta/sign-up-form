@@ -37,7 +37,15 @@
 [The Odin Project](https://www.theodinproject.com/)
 
 ## 📝 Description
-Builds a sign up form with validation.
+Builds a sign-up form.
+
+<details>
+<summary>Features</summary>
+
+* Validates every input.
+* Responsive across all screen sizes.
+
+</details>
 
 ## 🎯 Relevance
 To solidify concepts of `Forms` in HTML. 
