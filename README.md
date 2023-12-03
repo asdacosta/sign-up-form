@@ -54,6 +54,7 @@ Developers, users, recruiters.
 | `index.html` | Structure of web page.|
 | `sign.js` | Adds interactivity to form.|
 | `style.css` | Style form to be visually appealing.|
+|`imgs/*`|The images used in the website.|
 |`view-imgs/`| Contains the live demo and different screen views used in `README.md`.|
 
 </details>
