@@ -16,7 +16,7 @@
 
 **Demo:**
 
-![Live Demo](./view-imgs/signup-demo.gif)
+![Live Demo](./readme-assets/signup-demo.gif)
 
 <details>
 
@@ -24,12 +24,12 @@
 
 **Desktop View:**
 
-<img src="./view-imgs/desktop.png" alt="desktop view">
+<img src="./readme-assets/desktop.png" alt="desktop view">
 <br>
 
 **Mobile View:**
 
-<img src="./view-imgs/mobile.png" alt="mobile view" width="45%" height="45%">
+<img src="./readme-assets/mobile.png" alt="mobile view" width="45%" height="45%">
 
 </details>
 
@@ -63,7 +63,7 @@ Developers, users, recruiters.
 | `sign.js` | Adds interactivity to form.|
 | `style.css` | Style form to be visually appealing.|
 |`imgs/*`|The images used in the website.|
-|`view-imgs/*`| Live demo and different screen views used in `README.md`.|
+|`readme-assets/*`| Live demo and different screen views used in `README.md`.|
 
 </details>
 
